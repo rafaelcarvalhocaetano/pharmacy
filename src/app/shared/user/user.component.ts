@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'rmd-user',
+  selector: 'ifarm-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.scss']
 })

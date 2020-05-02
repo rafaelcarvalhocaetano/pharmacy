@@ -10,10 +10,6 @@ const routes: Routes = [
     redirectTo: 'login'
   },
   {
-    path: '**',
-    component: PageNotFoundComponentComponent
-  },
-  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then(login => login.LoginModule)
   },
@@ -28,6 +24,10 @@ const routes: Routes = [
   {
     path: 'summary',
     loadChildren: () => import('./order-summary/order-summary.module').then(os => os.OrderSummaryModule)
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponentComponent
   }
 ];
 

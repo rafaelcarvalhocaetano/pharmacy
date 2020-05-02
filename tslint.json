@@ -19,13 +19,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "rmd",
+      "ifarm",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "rmd",
+      "ifarm",
       "kebab-case"
     ],
     "eofline": true,

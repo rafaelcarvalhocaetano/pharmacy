@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'rmd-login',
+  selector: 'ifarm-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'rmd-list-remedy',
+  selector: 'ifarm-list-remedy',
   templateUrl: './list-remedy.component.html',
   styleUrls: ['./list-remedy.component.scss']
 })

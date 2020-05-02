@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'rmd-select',
+  selector: 'ifarm-select',
   templateUrl: './select.component.html',
   styleUrls: ['./select.component.scss']
 })
