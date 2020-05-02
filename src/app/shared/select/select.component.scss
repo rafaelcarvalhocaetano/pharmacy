@@ -1,0 +1,52 @@
+.select-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  .select {
+    position: relative;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      margin-right: 5%;
+    }    
+    i, span {
+      text-align: center;
+      color: var(--rmd-text-primary);
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 500ms ease;
+      &.rodar {
+        transform: rotate(180deg);
+        transition: all 500ms ease;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .user-list {
+    top: 1px;
+    position: absolute;
+    margin-top: 30px;
+    border-radius: 10px;
+    .user-item {
+      padding: 10px 20px;
+      text-align: center;
+      .user-action {
+        cursor: pointer;
+        small {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

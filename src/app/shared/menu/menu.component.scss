@@ -1,0 +1,23 @@
+.menu-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--rmd-color-secondary-shade);
+  .btn-menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border: none;
+    color: #FFF;
+    background-color: transparent;
+  }
+  .farm-user {
+    padding-top: 30px;
+  }
+  .farm-menu {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

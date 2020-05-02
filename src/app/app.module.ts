@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { PageNotFoundComponentComponent } from './page-not-found-component/page-
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     AppRoutingModule
   ],
   providers: [],

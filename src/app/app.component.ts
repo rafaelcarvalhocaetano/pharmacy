@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  public open = false;
+
+  public showMenu(e: boolean) {
+    this.open = e;
+  }
 }

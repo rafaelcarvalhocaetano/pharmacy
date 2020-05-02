@@ -1,64 +1,40 @@
 :root {
-  --rmd-color-primary: #2c6a9a;
-  --rmd-color-primary-rgb: 44,106,154;
-  --rmd-color-primary-contrast: #ffffff;
-  --rmd-color-primary-contrast-rgb: 255,255,255;
-  --rmd-color-primary-shade: #275d88;
-  --rmd-color-primary-tint: #4179a4;
+  --rmd-color-primary: #4c78d3;
+  --rmd-color-primary-shade: #436aba;
+  --rmd-color-primary-tint: #5e86d7;
 
-  --rmd-color-secondary: #3dc2ff;
-  --rmd-color-secondary-rgb: 61,194,255;
-  --rmd-color-secondary-contrast: #ffffff;
-  --rmd-color-secondary-contrast-rgb: 255,255,255;
-  --rmd-color-secondary-shade: #36abe0;
-  --rmd-color-secondary-tint: #50c8ff;
+  --rmd-color-secondary: #0eaff9;
+  --rmd-color-secondary-shade: #0e91b9;
+  --rmd-color-secondary-tint: #26b7fa;
 
   --rmd-color-tertiary: #5260ff;
   --rmd-color-tertiary-rgb: 82,96,255;
-  --rmd-color-tertiary-contrast: #ffffff;
-  --rmd-color-tertiary-contrast-rgb: 255,255,255;
   --rmd-color-tertiary-shade: #4854e0;
   --rmd-color-tertiary-tint: #6370ff;
 
   --rmd-color-success: #2dd36f;
-  --rmd-color-success-rgb: 45,211,111;
-  --rmd-color-success-contrast: #ffffff;
-  --rmd-color-success-contrast-rgb: 255,255,255;
   --rmd-color-success-shade: #28ba62;
   --rmd-color-success-tint: #42d77d;
 
   --rmd-color-warning: #ffc409;
-  --rmd-color-warning-rgb: 255,196,9;
-  --rmd-color-warning-contrast: #000000;
-  --rmd-color-warning-contrast-rgb: 0,0,0;
   --rmd-color-warning-shade: #e0ac08;
   --rmd-color-warning-tint: #ffca22;
 
   --rmd-color-danger: #eb445a;
-  --rmd-color-danger-rgb: 235,68,90;
-  --rmd-color-danger-contrast: #ffffff;
-  --rmd-color-danger-contrast-rgb: 255,255,255;
   --rmd-color-danger-shade: #cf3c4f;
   --rmd-color-danger-tint: #ed576b;
 
   --rmd-color-dark: #222428;
-  --rmd-color-dark-rgb: 34,36,40;
-  --rmd-color-dark-contrast: #ffffff;
-  --rmd-color-dark-contrast-rgb: 255,255,255;
   --rmd-color-dark-shade: #1e2023;
   --rmd-color-dark-tint: #383a3e;
 
   --rmd-color-medium: #92949c;
-  --rmd-color-medium-rgb: 146,148,156;
-  --rmd-color-medium-contrast: #ffffff;
-  --rmd-color-medium-contrast-rgb: 255,255,255;
   --rmd-color-medium-shade: #808289;
   --rmd-color-medium-tint: #9d9fa6;
 
   --rmd-color-light: #f4f5f8;
-  --rmd-color-light-rgb: 244,245,248;
-  --rmd-color-light-contrast: #000000;
-  --rmd-color-light-contrast-rgb: 0,0,0;
-  --rmd-color-light-shade: #d7d8da;
-  --rmd-color-light-tint: #f5f6f9;
+  --rmd-color-light-shade: #f1f3f5;
+  --rmd-color-light-tint: #c2c3c5;
+    
+  --rmd-text-primary: #f8f8fa8a;
 }

@@ -1,0 +1,18 @@
+<div class="select-container">
+  <button class="select" (click)="showListUser = !showListUser">
+    <span>Dart Verder</span>
+    <i class="fas fa-chevron-down" [ngClass]="{'rodar': showListUser}"></i>
+  </button>
+  <ul class="user-list" *ngIf="showListUser">
+    <li class="user-item">
+      <a class="user-action">
+        <small>Selecione Aqui</small>
+      </a>
+    </li>
+    <li class="user-item">
+      <a class="user-action">
+        <small>Selecione Aqui</small>
+      </a>
+    </li>
+  </ul>
+</div>

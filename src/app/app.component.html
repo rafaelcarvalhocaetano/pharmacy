@@ -1,6 +1,9 @@
 
-<div class="ctn">
-  <i class="fab fa-500px"></i>
-  <i class="fas fa-ad"></i>
+<div class="home">
+  <div class="item-menu">
+    <rmd-menu  [ngClass]="{'om': open}" (openMenu)="showMenu($event)" *ngIf="open"></rmd-menu>
+  </div>
+  <div class="item-router">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<router-outlet></router-outlet>
