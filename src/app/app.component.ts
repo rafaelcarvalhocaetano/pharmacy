@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public open = false;
 
-  public showMenu(e: boolean) {
-    this.open = e;
-  }
 }

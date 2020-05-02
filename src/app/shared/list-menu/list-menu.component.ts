@@ -9,5 +9,4 @@ import { Menu } from '../../core/model/menu';
 export class ListMenuComponent {
 
   @Input() public listMenu: Menu[] = [];
-
 }
