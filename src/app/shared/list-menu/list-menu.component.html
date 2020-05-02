@@ -1,7 +1,7 @@
 <ul class="menu-list" *ngFor="let item of listMenu; let i = index">
   <span class="title">{{ item.title }}</span>
   <li class="menu-item" *ngFor="let subMenu of item.listItems">
-    <a class="menu-action">
+    <a class="menu-action" (click)="openRouter.emit(subMenu.code)">
       <i [class]="subMenu.icon"></i>
       <span>{{ subMenu.description }}</span>
     </a>

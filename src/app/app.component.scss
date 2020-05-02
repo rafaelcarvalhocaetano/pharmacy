@@ -4,11 +4,12 @@
   display: flex;
   flex-direction: row;
   .item-menu {
-    width: 20%;
+    width: 16%;
     height: 100vh;
     position: relative;
   }
   .item-router {
-    width: calc(100% - 15%);
+    transition: all 1s ease-in;
+    width: calc(100% - 16%);
   }
 }

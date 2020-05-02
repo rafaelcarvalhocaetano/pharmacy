@@ -3,6 +3,6 @@
     <ifarm-user></ifarm-user>
   </div>
   <div class="farm-menu">
-    <ifarm-list-menu [listMenu]="listMenu"></ifarm-list-menu>
+    <ifarm-list-menu [listMenu]="listMenu" (openRouter)="openRouter($event)"></ifarm-list-menu>
   </div>
 </div>
