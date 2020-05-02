@@ -22,4 +22,7 @@ describe('ListRemedyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+
 });

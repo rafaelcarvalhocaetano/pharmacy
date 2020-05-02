@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListRemedyComponent implements OnInit {
 
+  public valor: string;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
