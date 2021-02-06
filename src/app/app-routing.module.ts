@@ -26,6 +26,14 @@ const routes: Routes = [
     loadChildren: () => import('./order-summary/order-summary.module').then(os => os.OrderSummaryModule)
   },
   {
+    path: 'vitamine',
+    loadChildren: () => import('./vitamine/vitamine.module').then(responseModule => responseModule.VitamineModule)
+  },
+  {
+    path: 'cosmetics',
+    loadChildren: () => import('./cosmetics/cosmetics.module').then(responseModule => responseModule.CosmeticsModule)
+  },
+  {
     path: '**',
     component: PageNotFoundComponentComponent
   }

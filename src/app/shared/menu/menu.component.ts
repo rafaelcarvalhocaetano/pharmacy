@@ -6,16 +6,12 @@ import { listMenu } from '../../core/constants/menu_const';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
   @Output() public sendNumberRouter = new EventEmitter<number>();
   public listMenu = listMenu;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  public showMenu = false;
 
   openRouter(e: number) {
     this.sendNumberRouter.emit(e);

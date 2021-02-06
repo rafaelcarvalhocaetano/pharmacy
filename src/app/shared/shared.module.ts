@@ -6,10 +6,11 @@ import { MenuComponent } from './menu/menu.component';
 import { UserComponent } from './user/user.component';
 import { SelectComponent } from './select/select.component';
 import { ListMenuComponent } from './list-menu/list-menu.component';
+import { ButtonAddComponent } from './components/button-add/button-add.component';
 
 
 @NgModule({
-  declarations: [MenuComponent, UserComponent, SelectComponent, ListMenuComponent],
+  declarations: [MenuComponent, UserComponent, SelectComponent, ListMenuComponent, ButtonAddComponent],
   imports: [
     CommonModule
   ],
@@ -18,7 +19,8 @@ import { ListMenuComponent } from './list-menu/list-menu.component';
     MenuComponent,
     UserComponent,
     SelectComponent,
-    ListMenuComponent
+    ListMenuComponent,
+    ButtonAddComponent
   ]
 })
 export class SharedModule { }

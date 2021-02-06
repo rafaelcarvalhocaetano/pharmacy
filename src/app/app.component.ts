@@ -13,13 +13,15 @@ export class AppComponent {
   ) {}
 
   openRouter(e: number) {
-    console.log(' number router ', e);
     switch (e) {
+      case 1:
+        return this.router.navigate(['/remedy']);
+      case 2:
+        return this.router.navigate(['/vitamine']);
+      case 3:
+        return this.router.navigate(['/cosmetics']);
       case 4:
-        this.router.navigate(['/remedy']);
-        break;
-      default:
-        break;
+        return this.router.navigate(['/summary']);
     }
   }
 

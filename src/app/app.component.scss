@@ -4,12 +4,24 @@
   display: flex;
   flex-direction: row;
   .item-menu {
-    width: 16%;
+    width: 250px;
     height: 100vh;
     position: relative;
   }
   .item-router {
     transition: all 1s ease-in;
     width: calc(100% - 16%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .home {
+    .item-menu {
+      width: auto;
+      position: relative;
+    }
+    .item-router {
+      transition: all 1s ease-in;
+    }
   }
 }

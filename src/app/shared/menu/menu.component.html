@@ -1,4 +1,7 @@
-<div class="menu-container">
+<div class="menu-container" [ngClass]="{'show': showMenu}">
+  <button class="btn" (click)="showMenu = !showMenu">
+    <i class="fas fa-bars" [ngClass]="{'show': showMenu}"></i>
+  </button>
   <div class="farm-user">
     <ifarm-user></ifarm-user>
   </div>
