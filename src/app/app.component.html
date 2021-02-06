@@ -1,7 +1,6 @@
-
 <div class="home">
   <div class="item-menu">
-    <ifarm-menu (sendNumberRouter)="openRouter($event)"></ifarm-menu>
+    <ifarm-menu [listMenu]="listMenuItems" (sendNumberRouter)="openRouter($event)"></ifarm-menu>
   </div>
   <div class="item-router">
     <router-outlet></router-outlet>

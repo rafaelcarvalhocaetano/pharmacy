@@ -1,16 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuService } from './core/services/menu-service/menu.service';
 
 @Component({
   selector: 'ifarm-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  public listMenuItems = []
 
   constructor(
-    private router: Router
+    private router: Router,
+    private menuService: MenuService
   ) {}
+
+
+  ngOnInit(): void {
+    this.menuService.getMenu().subscribe(responseMenu => this.listMenuItems = responseMenu)
+  }
 
   openRouter(e: number) {
     switch (e) {

@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "iFarm"
+  "defaultProject": "iFarm",
+  "cli": {
+    "analytics": "5c5b2bfb-9b48-4c4b-a129-cdd1ed4ecebb"
+  }
 }

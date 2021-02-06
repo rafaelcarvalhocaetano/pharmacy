@@ -1,5 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { listMenu } from '../../core/constants/menu_const';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'ifarm-menu',
@@ -9,7 +8,7 @@ import { listMenu } from '../../core/constants/menu_const';
 export class MenuComponent {
 
   @Output() public sendNumberRouter = new EventEmitter<number>();
-  public listMenu = listMenu;
+  @Input() public listMenu = [];
 
   public showMenu = false;
 
