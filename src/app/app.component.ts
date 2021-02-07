@@ -31,6 +31,8 @@ export class AppComponent implements OnInit {
         return this.router.navigate(['/cosmetics']);
       case 4:
         return this.router.navigate(['/summary']);
+      case 6:
+        return this.router.navigate(['/remedy']);
     }
   }
 

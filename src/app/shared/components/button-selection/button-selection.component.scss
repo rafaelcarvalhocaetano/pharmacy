@@ -1,0 +1,19 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--rmd-color-secondary-tint);
+  padding: 10px;
+  &:focus, &:hover {
+    outline: none;
+    background-color: #FFFF;
+    border-radius: 4px;
+    i {
+      color: var(--rmd-color-secondary);
+    }
+  }
+  i {
+    color: var(--rmd-color-medium);
+
+  }
+}

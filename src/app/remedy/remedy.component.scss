@@ -47,19 +47,6 @@
 
     .icons-action {
       margin-top: 10px;
-      .btn {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        color: var(--rmd-color-secondary-tint);
-        &:focus {
-          outline: none;
-        }
-        .fa-bars {
-          margin-left: 15px;
-          color: var(--rmd-color-medium);
-        }
-      }
     }
   }
 }
