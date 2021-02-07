@@ -1,18 +1,22 @@
-<div class="products">
-  <div class="items-search">
-    <label class="input-group" for="search">
-      <button class="btn">
-        <i class="fas fa-search"></i>
-      </button>
-      <input type="text" id="search" placeholder="Search a list" autocomplete="off" autofocus="off">
-    </label>
-    <div class="icons-action">
-      <ifarm-button-selection icon="fas fa-th-list"></ifarm-button-selection>
-      <ifarm-button-selection icon="fas fa-bars"></ifarm-button-selection>
+<div class="container-products">
+  <div class="products">
+    <div class="items-search">
+      <label class="input-group" for="search">
+        <button class="btn">
+          <i class="fas fa-search"></i>
+        </button>
+        <input type="text" id="search" placeholder="Search a list" autocomplete="off" autofocus="off">
+      </label>
+      <div class="icons-action">
+        <ifarm-button-select-option (onSelectId)="onSelectId($event)"></ifarm-button-select-option>
+      </div>
     </div>
+    <ifarm-button-add (onAddNewItem)="onAddNewItem()"></ifarm-button-add>
+
+    <div class="list-items">
+      <ifarm-card-list></ifarm-card-list>
+    </div>
+    
   </div>
-  <app-button-add></app-button-add>
+  <router-outlet></router-outlet>
 </div>
-
-
-<router-outlet></router-outlet>

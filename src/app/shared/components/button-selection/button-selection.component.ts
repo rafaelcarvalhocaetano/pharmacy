@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ButtonSelectionComponent {
 
   @Input() public icon: string;
+  @Input() public select: boolean;
   @Output() public onClick = new EventEmitter<any>();
 
 }

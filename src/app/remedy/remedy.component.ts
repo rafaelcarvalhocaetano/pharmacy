@@ -12,4 +12,14 @@ export class RemedyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  public onSelectId(id: number): void {
+    console.log("🚀 ~ file: remedy.component.ts ~ line 18 ~ RemedyComponent ~ onSelectId ~ id", id)
+  }
+
+  public onAddNewItem(): void {
+    console.log("🚀 ~ file: remedy.component.ts SELECTED ")
+  }
+
+
 }

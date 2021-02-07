@@ -4,13 +4,16 @@
   cursor: pointer;
   color: var(--rmd-color-secondary-tint);
   padding: 10px;
-  &:focus, &:hover {
-    outline: none;
+
+  &.select {
     background-color: #FFFF;
-    border-radius: 4px;
     i {
       color: var(--rmd-color-secondary);
     }
+  }
+  &:focus, &:hover {
+    outline: none;
+    border-radius: 4px;
   }
   i {
     color: var(--rmd-color-medium);

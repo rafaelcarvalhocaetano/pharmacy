@@ -1,0 +1,62 @@
+.card-list {
+  border: 2px solid var(--rmd-color-light-tint);
+  border-radius: 4px;
+  padding: 5px;
+
+  .card-header, .card-total, .card-list-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .card-header {
+    h3 {
+      font-size: 15px;
+      color: var(--text-color);
+    }
+    button {
+      i {
+        color: var(--rmd-color-light-tint);
+      }
+    }
+  }
+
+  .card-total {
+    border-bottom: 2px solid var(--rmd-color-light-tint);
+    .title-total {
+      color: var(--rmd-color-light-tint);
+      font-weight: 550;
+    }
+    .cash-total {
+      font-size: 14px;
+      color: var(--text-color);
+    }
+  }
+  .card-list-image {
+    .list-images {
+      width: calc(100% - 20%);
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .item-plus {
+      width: 40px;
+      height: 30px;
+      background-color: var(--blue-transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      span {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--rmd-color-secondary);
+      }
+    }
+  }
+
+
+
+}

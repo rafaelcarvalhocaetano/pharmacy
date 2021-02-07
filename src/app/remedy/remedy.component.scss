@@ -1,52 +1,62 @@
-.products {
-  width: 25%;
-  height: 100vh;
-  padding: 0 10px;
-  background-color: var(--rmd-color-light);
-  .items-search {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    
-    .input-group {
-      height: 30px;
-      width: 90%;
-      border-radius: 5px;
-      border: 1px solid #CCC;
-      background-color: #FFF;
+.container-products {
+  display: flex;
+  .products {
+    width: 25%;
+    height: 100vh;
+    padding: 0 10px;
+    background-color: var(--rmd-color-light);
+    .items-search {
       display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      padding-left: 10px;
-      .btn {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        color: var(--rmd-color-secondary-tint);
-        &:focus {
-          outline: none;
+      padding-top: 20px;
+      .input-group {
+        height: 30px;
+        width: 90%;
+        border-radius: 5px;
+        border: 1px solid var(--rmd-color-medium);
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        .btn {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          color: var(--rmd-color-secondary-tint);
+          &:focus {
+            outline: none;
+          }
+          i {
+            color: var(--rmd-color-medium);
+          }
         }
-        i {
-          color: var(--rmd-color-medium);
+        input {
+          width: 100%;
+          color: var(--text-color);
+          margin: 5px;
+          border: none;
+          &::placeholder {
+            color: var(--rmd-color-medium);
+          }
+          &:focus {
+            outline: none;
+          }
         }
       }
-      input {
-        width: 100%;
-        color: var(--text-color);
-        margin: 5px;
-        border: none;
-        &::placeholder {
-          color: var(--rmd-color-medium);
-        }
-        &:focus {
-          outline: none;
-        }
+      .icons-action {
+        margin-top: 10px;
       }
     }
+  }
+}
 
-    .icons-action {
-      margin-top: 10px;
+@media (max-width: 1024px) {
+  .container-products {
+    flex-direction: row;
+    .products {
+      width: 50%;
     }
   }
 }

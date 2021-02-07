@@ -12,7 +12,12 @@ const remedyRouting: Routes = [
     component: RemedyComponent,
     children: [
       {
-        path: 'list-remedy',
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'list'
+      },
+      {
+        path: 'list',
         component: ListRemedyComponent
       }
     ]
