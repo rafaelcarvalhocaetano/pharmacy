@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MaterialModule } from './material.module';
-
 import { MenuComponent } from './menu/menu.component';
 import { UserComponent } from './user/user.component';
 import { SelectComponent } from './select/select.component';
@@ -26,7 +24,6 @@ import { CardListComponent } from './components/card-list/card-list.component';
   ],
   imports: [
     CommonModule,
-    MaterialModule
   ],
   exports: [
     CommonModule,
@@ -37,7 +34,6 @@ import { CardListComponent } from './components/card-list/card-list.component';
     ButtonAddComponent,
     ButtonSelectionComponent,
     ButtonSelectOptionComponent,
-    MaterialModule,
     CardListComponent
   ]
 })

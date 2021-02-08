@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'ifarm-remedy',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./remedy.component.scss']
 })
 export class RemedyComponent implements OnInit {
+
+  
+  done = [];
 
   constructor() { }
 
@@ -20,6 +25,20 @@ export class RemedyComponent implements OnInit {
   public onAddNewItem(): void {
     console.log("🚀 ~ file: remedy.component.ts SELECTED ")
   }
+
+  public drop(ev: DragEvent | any): void {
+    ev.preventDefault();
+    const data = ev.dataTransfer.getData('text');
+    const valor = ev.target.appendChild(document.getElementById(data));
+    this.done.push(valor.innerText)
+  }
+
+  public allowDrop(ev: DragEvent | any): void {
+    ev.preventDefault();
+  }
+
+ 
+
 
 
 }

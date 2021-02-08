@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
-
 
 @Component({
   selector: 'ifarm-list-remedy',
@@ -18,29 +16,27 @@ export class ListRemedyComponent implements OnInit {
   }
 
   todo = [
-    'Get to work',
-    'Pick up groceries',
-    'Go home',
-    'Fall asleep'
-  ];
-
-  done = [
-    'Get up',
-    'Brush teeth',
-    'Take a shower',
-    'Check e-mail',
-    'Walk dog'
-  ];
-
-  drop(event: CdkDragDrop<string[]>) {
-    if (event.previousContainer === event.container) {
-      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-    } else {
-      transferArrayItem(event.previousContainer.data,
-                        event.container.data,
-                        event.previousIndex,
-                        event.currentIndex);
+    {
+      id: 1,
+      name: 'a'
+    },
+    {
+      id: 2,
+      name: 'b'
+    },
+    {
+      id: 3,
+      name: 'c'
     }
+  ];
+
+
+  drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  allowDrop(ev) {
+    ev.preventDefault();
   }
 
 
