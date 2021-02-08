@@ -12,17 +12,12 @@
       </div>
     </div>
     <ifarm-button-add (onAddNewItem)="onAddNewItem()"></ifarm-button-add>
-
     <div class="list-items">
-      <ifarm-card-list
-      id="div2" (drop)="drop($event)" 
-      (dragover)="allowDrop($event)"
-      ></ifarm-card-list>
-
-      <p *ngFor="let item of done">{{ item }}</p>
-
+      <ifarm-card-list id="card" (drop)="drop($event)" (dragover)="allowDrop($event)"></ifarm-card-list>
     </div>
-
   </div>
   <router-outlet></router-outlet>
 </div>
+<ifarm-modal *ngIf="showModalAddNewItem" (onCloseModal)="closeBackDrop($event)">
+  <ifarm-form-new-item (closeForm)="closeBackDrop($event)"></ifarm-form-new-item>
+</ifarm-modal>

@@ -9,6 +9,8 @@ import { ButtonAddComponent } from './components/button-add/button-add.component
 import { ButtonSelectionComponent } from './components/button-selection/button-selection.component';
 import { ButtonSelectOptionComponent } from './components/button-select-option/button-select-option.component';
 import { CardListComponent } from './components/card-list/card-list.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { FormNewItemComponent } from './form-new-item/form-new-item.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { CardListComponent } from './components/card-list/card-list.component';
     ButtonAddComponent,
     ButtonSelectionComponent,
     ButtonSelectOptionComponent,
-    CardListComponent
+    CardListComponent,
+    ModalComponent,
+    FormNewItemComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +38,9 @@ import { CardListComponent } from './components/card-list/card-list.component';
     ButtonAddComponent,
     ButtonSelectionComponent,
     ButtonSelectOptionComponent,
-    CardListComponent
+    CardListComponent,
+    ModalComponent,
+    FormNewItemComponent
   ]
 })
 export class SharedModule { }
