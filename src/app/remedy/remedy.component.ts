@@ -35,11 +35,15 @@ export class RemedyComponent implements OnInit {
     ev.preventDefault();
   }
 
+  public drapStart(e) {
+    console.log("🚀 ~ file: remedy.component.ts ~ line 39 ~ RemedyComponent ~ drapStart ~ e", e)
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text', e.target.id);
+  }
+
 
   public closeBackDrop(event) {
     this.showModalAddNewItem = false
-  console.log("🚀 ~ file: remedy.component.ts ~ line 40 ~ RemedyComponent ~ closeBackDrop ~ event", event)
-
   }
 
  

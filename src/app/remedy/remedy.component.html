@@ -13,7 +13,10 @@
     </div>
     <ifarm-button-add (onAddNewItem)="onAddNewItem()"></ifarm-button-add>
     <div class="list-items">
-      <ifarm-card-list id="card" (drop)="drop($event)" (dragover)="allowDrop($event)"></ifarm-card-list>
+     <div class="cards-list">
+      <ifarm-card-list id="card" (drop)="drop($event)" (allowDrop)="allowDrop($event)" (drapStart)="drapStart($event)"></ifarm-card-list>
+      
+     </div>
     </div>
   </div>
   <router-outlet></router-outlet>

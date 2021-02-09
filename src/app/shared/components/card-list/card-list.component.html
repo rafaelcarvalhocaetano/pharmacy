@@ -1,4 +1,4 @@
-<div class="card-list">
+<div class="btn card-list">
   <div class="card-header">
     <h3>My vitamins</h3>
     <button class="btn">
@@ -12,11 +12,12 @@
   </div>
 
   <div class="card-list-image">
-    <div class="list-images">
+    <div class="list-images" (drop)="drop.emit($event)" (dragover)="allowDrop.emit($event)" (dragstart)="drapStart.emit($event)">
       <img src="../../../../assets/img/remedio.png" alt="">
     </div>
     <div class="item-plus">
       <span>+5</span>
     </div>
   </div>
+
 </div>

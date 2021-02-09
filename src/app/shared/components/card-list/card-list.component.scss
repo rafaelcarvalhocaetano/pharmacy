@@ -2,7 +2,7 @@
   border: 2px solid var(--rmd-color-light-tint);
   border-radius: 4px;
   padding: 5px;
-
+  cursor: pointer;
   .card-header, .card-total, .card-list-image {
     display: flex;
     align-items: center;
@@ -36,6 +36,13 @@
   .card-list-image {
     .list-images {
       width: calc(100% - 20%);
+      padding: 8px 12px 8px 0;
+      border: 2px solid transparent;
+      &.dz-drag-hover {
+        border: 2px dotted var(--rmd-color-light-tint);
+        background-color: var(--rmd-color-light-shade);
+        border-radius: 4px;
+      }
       img {
         width: 30px;
         height: 30px;

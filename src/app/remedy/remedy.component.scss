@@ -1,5 +1,9 @@
+@import '../../assets/styles/mixis.scss';
+
+
 .container-products {
   display: flex;
+  overflow: hidden;
   .products {
     width: 25%;
     height: 100vh;
@@ -50,8 +54,26 @@
       }
     }
     .list-items {
-      height: 400px;
-      background-color: #FFF;
+      height: calc(100% - 200px);
+      overflow-y: auto;
+      margin: 10px 0;
+      @include scrollStyle();
+      .cards-list {
+        padding: 5px 0;
+        margin-right: 5px;
+        #card {
+          padding: 5px;
+          &:after {
+            content: " ";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 15px;
+            background-color: #FFF;
+          }
+        }
+      }
     }
   }
 }
