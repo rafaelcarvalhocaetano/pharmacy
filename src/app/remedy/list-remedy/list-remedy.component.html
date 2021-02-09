@@ -1,13 +1,6 @@
-<!-- <div id="list-item" class="example-box" *ngFor="let item of todo"
+<div id="list-item" class="example-box" *ngFor="let item of todo"
 (dragover)="allowDrop($event)">
-  <button [id]="item.id" draggable="true" (dragstart)="drag($event)">
+  <button [id]="item.id" class="btn-action" draggable="true" (dragstart)="drag($event)">
     {{item.name}}
   </button>
-</div> -->
-
-
-<ul class="slides" id="list-item"  *ngFor="let item of todo" (dragover)="allowDrop($event)">
-  <button [id]="item.id" class="slide" draggable="true" (dragstart)="drag($event)">
-    {{item.name}}
-  </button>
-</ul>
+</div>

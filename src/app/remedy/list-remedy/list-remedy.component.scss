@@ -1,28 +1,7 @@
-.slides {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 300px;
-}
-.slide {
-  padding: 15px;
-  background-color: #2F2F2F;
-  margin: 0 0 15px;
-  text-align: center;
-  color: #FFF;
-  border: 2px solid #444;
-}
-
-.slide-placeholder {
-background: #DADADA;
-position: relative;
-  &:after {
-  content: " ";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 15px;
-  background-color: #FFF;
+.example-box {
+  .btn-action {
+    width: 40px;
+    height: 40px;
+    background-color: red;
   }
 }

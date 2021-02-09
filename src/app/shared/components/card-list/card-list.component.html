@@ -12,9 +12,15 @@
   </div>
 
   <div class="card-list-image">
-    <div class="list-images" (drop)="drop.emit($event)" (dragover)="allowDrop.emit($event)" (dragstart)="drapStart.emit($event)">
-      <img src="../../../../assets/img/remedio.png" alt="">
+    
+    <div class="list-images" [ngClass]="{'loader': isLoader }">
+      <div class="card-loader" *ngIf="!isLoader" (drop)="drop.emit($event)" (dragover)="allowDrop.emit($event)">
+        <div class="drag" *ngFor="let item of lista">
+          <img [src]="item.path" [alt]="item.id">
+        </div>
+      </div>
     </div>
+
     <div class="item-plus">
       <span>+5</span>
     </div>

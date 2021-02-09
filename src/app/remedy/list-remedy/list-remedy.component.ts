@@ -39,8 +39,6 @@ export class ListRemedyComponent implements OnInit {
   }
 
   allowDrop(ev) {
-    ev.srcElement.style.opacity = '0.6';
-    console.log("🚀 ~ file: list-remedy.component.ts ~ line 39 ~ ListRemedyComponent ~ allowDrop ~ ev", ev)
     ev.preventDefault();
   }
 
