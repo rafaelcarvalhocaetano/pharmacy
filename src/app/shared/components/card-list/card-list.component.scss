@@ -41,15 +41,6 @@
       width: 100%;
       display: flex;
       border: 2px solid transparent;
-      &.loader {
-        border: 6px solid var(--rmd-color-light-loader);
-        border-radius: 50%;
-        border-top: 6px solid var(--rmd-color-secondary);
-        width: 20px;
-        height: 20px;
-        -webkit-animation: spin 2s linear infinite;
-        animation: spin 2s linear infinite;
-      }
       .card-loader {
         display: flex;
         width: 100%;
@@ -59,6 +50,15 @@
           width: 30px;
           height: 30px;
         }
+      }
+      &.loader {
+        border: 6px solid var(--rmd-color-light-loader);
+        border-radius: 50%;
+        border-top: 6px solid var(--rmd-color-secondary);
+        width: 20px;
+        height: 20px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
       }
     }
     .item-plus {
