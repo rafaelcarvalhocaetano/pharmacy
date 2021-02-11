@@ -1,0 +1,89 @@
+.dnd-card {
+  width: 240px;
+  height: 250px;
+  border: 2px solid var(--rmd-color-light);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  .dnd-header-action {
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .show-action {
+      display: none;
+      button {
+        height: 17px;
+        i {
+          font-size: 17px;
+          color: var(--rmd-color-light-tint);
+        }
+        &:hover {
+          cursor: grab;
+        }
+        &:active {
+          cursor: grabbing;
+        }
+      }
+      input[type=checkbox] {
+        height: 17px;
+        cursor: pointer;
+        font-size: 17px;
+        visibility: hidden;
+        &::after {
+          content: " ";
+          display: flex;
+          color: var(--rmd-color-secondary);
+          width: 15px;
+          height: 17px;
+          visibility: visible;
+          border: 1px solid var(--rmd-color-secondary);
+          border-radius: 2px;
+        }
+        &:checked:after {
+          content: "\2714";
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+        }
+        &:checked {
+          .show-action {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .dnd-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin-top: 10px;
+    .title-dnd-body {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    img {
+      margin: 20px 0;
+      width: 45%;
+      height: 140px;
+    }
+    .dnd-body-cash {
+      font-size: 14px;
+      font-weight: 550;
+    }
+  }
+
+  &:hover, &.selected {
+    border: 2px solid var(--rmd-color-secondary);
+    > .dnd-header-action > .show-action {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}

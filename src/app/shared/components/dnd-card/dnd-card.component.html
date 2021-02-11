@@ -1,0 +1,15 @@
+<div class="dnd-card" [ngClass]="{'selected': itemCard.selectedCard }">
+  <div class="dnd-header-action">
+   <div class="show-action">
+      <button class="btn">
+        <i class="fas fa-grip-vertical"></i>
+      </button>
+      <input type="checkbox" [id]="itemCard.idSelected" [(ngModel)]="itemCard.selectedCard">
+   </div>
+  </div>
+  <div class="dnd-body">
+    <p class="title-dnd-body">{{ itemCard.productTitle }}</p>
+    <img [src]="itemCard.productPath" [alt]="itemCard.productTitle">
+    <span class="dnd-body-cash">{{ itemCard.productValue }}</span>
+  </div>
+</div>

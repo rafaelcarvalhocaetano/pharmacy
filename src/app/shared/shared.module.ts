@@ -11,6 +11,8 @@ import { ButtonSelectOptionComponent } from './components/button-select-option/b
 import { CardListComponent } from './components/card-list/card-list.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { FormNewItemComponent } from './form-new-item/form-new-item.component';
+import { DndCardComponent } from './components/dnd-card/dnd-card.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,10 +26,12 @@ import { FormNewItemComponent } from './form-new-item/form-new-item.component';
     ButtonSelectOptionComponent,
     CardListComponent,
     ModalComponent,
-    FormNewItemComponent
+    FormNewItemComponent,
+    DndCardComponent
   ],
   imports: [
     CommonModule,
+    FormsModule
   ],
   exports: [
     CommonModule,
@@ -40,7 +44,9 @@ import { FormNewItemComponent } from './form-new-item/form-new-item.component';
     ButtonSelectOptionComponent,
     CardListComponent,
     ModalComponent,
-    FormNewItemComponent
+    FormNewItemComponent,
+    DndCardComponent,
+    FormsModule
   ]
 })
 export class SharedModule { }
