@@ -1,7 +1,10 @@
-<div class="dnd-card" [ngClass]="{'selected': itemCard.selectedCard }">
+<div class="dnd-card" [id]="itemCard.id" 
+  [ngClass]="{'selected': itemCard.selectedCard }"
+  [draggable]="itemCard.selectedCard || selectArea"
+  (dragstart)="onDragstart.emit($event)" >
   <div class="dnd-header-action">
    <div class="show-action">
-      <button class="btn">
+      <button class="btn" (mouseover)="onDraggable()">
         <i class="fas fa-grip-vertical"></i>
       </button>
       <input type="checkbox" [id]="itemCard.idSelected" [(ngModel)]="itemCard.selectedCard">

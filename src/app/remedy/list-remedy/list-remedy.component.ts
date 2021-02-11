@@ -20,20 +20,30 @@ export class ListRemedyComponent implements OnInit {
   todo = [
     {
       id: 1,
-      name: 'a'
+      selectedCard: false,
+      productPath: '../../../../assets/img/rmd.png',
+      productTitle: 'Jointum',
+      productValue: '8.00'
     },
     {
       id: 2,
-      name: 'b'
+      selectedCard: false,
+      productPath: '../../../../assets/img/rmd.png',
+      productTitle: 'Rafael (tablets)',
+      productValue: '8.00'
     },
     {
       id: 3,
-      name: 'c'
+      selectedCard: false,
+      productPath: '../../../../assets/img/rmd.png',
+      productTitle: 'Teste (tablets)',
+      productValue: '8.00'
     }
   ];
 
 
-  drag(e) {
+  onDragstart(e) {
+    console.log("🚀 ~ file: list-remedy.component.ts ~ line 49 ~ ListRemedyComponent ~ onDragstart ~ e", e)
     e.dataTransfer.setData("text", e.target.id);
 
   }

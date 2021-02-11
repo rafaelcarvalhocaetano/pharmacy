@@ -1,7 +1,3 @@
-<div id="list-item" class="example-box" *ngFor="let item of todo"
-(dragover)="allowDrop($event)">
-  <button [id]="item.id" class="btn-action" draggable="true" (dragstart)="drag($event)">
-    {{item.name}}
-  </button>
+<div id="list-item" class="example-box" *ngFor="let item of todo" (dragover)="allowDrop($event)">
+  <ifarm-dnd-card [itemCard]="item" (onDragstart)="onDragstart($event)"></ifarm-dnd-card>
 </div>
-<ifarm-dnd-card></ifarm-dnd-card>
