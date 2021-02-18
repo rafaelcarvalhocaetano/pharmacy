@@ -13,6 +13,7 @@ import { ModalComponent } from './components/modal/modal.component';
 import { FormNewItemComponent } from './form-new-item/form-new-item.component';
 import { DndCardComponent } from './components/dnd-card/dnd-card.component';
 import { FormsModule } from '@angular/forms';
+import { AngularDraggableDirective } from './directives/draggable.directive';
 
 
 @NgModule({
@@ -27,11 +28,12 @@ import { FormsModule } from '@angular/forms';
     CardListComponent,
     ModalComponent,
     FormNewItemComponent,
-    DndCardComponent
+    DndCardComponent,
+    AngularDraggableDirective
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule    
   ],
   exports: [
     CommonModule,
@@ -46,7 +48,8 @@ import { FormsModule } from '@angular/forms';
     ModalComponent,
     FormNewItemComponent,
     DndCardComponent,
-    FormsModule
+    FormsModule,
+    AngularDraggableDirective
   ]
 })
 export class SharedModule { }

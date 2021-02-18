@@ -9,13 +9,16 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class ListRemedyComponent implements OnInit {
 
+
   public valor: string;
 
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
+
 
   todo = [
     {
@@ -43,16 +46,13 @@ export class ListRemedyComponent implements OnInit {
 
 
   onDragstart(e) {
-    console.log("🚀 ~ file: list-remedy.component.ts ~ line 49 ~ ListRemedyComponent ~ onDragstart ~ e", e)
+    e.srcElement.style.opacity = '0.4'
     e.dataTransfer.setData("text", e.target.id);
-
   }
 
   allowDrop(ev) {
+    ev.dataTransfer.dropEffect = 'move';
     ev.preventDefault();
   }
-
-  
-
 
 }

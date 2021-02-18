@@ -36,4 +36,6 @@ export class CardListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+ 
+
 }

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
 @Component({
   selector: 'ifarm-remedy',
   templateUrl: './remedy.component.html',
@@ -10,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RemedyComponent implements OnInit {
 
   public showModalAddNewItem = false;
+  public loader = false;
 
   constructor() { }
 
@@ -22,9 +21,6 @@ export class RemedyComponent implements OnInit {
   public onAddNewItem(): void {
     this.showModalAddNewItem = !this.showModalAddNewItem;
   }
-
-
-  public loader = false;
 
 
   public drop(ev: DragEvent | any): void {
